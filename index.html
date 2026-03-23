@@ -3,213 +3,254 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roldeint David Jiménez Osorio - CV</title>
-    <!-- Tailwind CSS CDN -->
+    <title>Roldeint David Jiménez Osorio - Hoja de Vida</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Font Awesome para íconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f3f4f6;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f3f6fb;
+        }
+        .sidebar {
+            background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
+            color: white;
         }
         .section-title {
-            border-bottom: 2px solid #1f2937;
-            padding-bottom: 0.5rem;
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: #0f172a;
+            border-bottom: 2px solid #2563eb;
+            padding-bottom: 0.35rem;
+            margin-bottom: 1rem;
         }
-        .profile-pic {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 3px solid #1f2937;
+        .badge {
+            display: inline-block;
+            background: rgba(59, 130, 246, 0.14);
+            color: #dbeafe;
+            border: 1px solid rgba(147, 197, 253, 0.25);
+            padding: 0.28rem 0.65rem;
+            border-radius: 9999px;
+            font-size: 0.78rem;
+            margin: 0.15rem;
         }
     </style>
 </head>
-<body class="min-h-screen">
-    <!-- Contenedor principal -->
-    <div class="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg mt-6">
-        <!-- Encabezado -->
-        <header class="text-center mb-8">
-            <!-- Foto con enlace relativo (asumiendo que profile-pic.jpg está en el mismo directorio) -->
-            <img src="profile-pic.jpg" alt="Foto de Roldeint David Jiménez Osorio" class="profile-pic mx-auto mb-4">
-            <h1 class="text-4xl font-bold text-gray-800">Roldeint David Jiménez Osorio</h1>
-            <p class="text-xl text-gray-600">Ingeniero de Sistemas</p>
-            <div class="flex justify-center space-x-4 mt-4 text-gray-700">
-                <p><i class="fas fa-phone"></i> +57 323 277 8423</p>
-                <p><i class="fas fa-envelope"></i> <a href="mailto:roldeint.jimenez99@gmail.com">roldeint.jimenez99@gmail.com</a></p>
-                <p><i class="fas fa-map-marker-alt"></i> Cra 20 A #40-54 Sur, Bogotá, Colombia</p>
-            </div>
-            <!-- Botones de Contacto (WhatsApp, LinkedIn y Descargar CV restaurado) -->
-            <div class="flex justify-center space-x-4 mt-6">
-                <a href="https://wa.me/qr/PVQ5MKOPYIK3H1" target="_blank" 
-                   class="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition">
-                    Contactar por WhatsApp
-                </a>
-                <a href="https://co.linkedin.com/in/roldeint-david-j-b6ba68146" target="_blank" 
-                   class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">
-                    Ver LinkedIn
-                </a>
-                <a href="Roldeint_Jimenez_CV.pdf" download 
-                   class="bg-gray-600 text-white px-6 py-2 rounded-lg hover:bg-gray-700 transition">
-                    Descargar CV
-                </a>
-            </div>
-        </header>
+<body>
 
-        <!-- Descripción Profesional (extendida) -->
-        <section class="mb-8">
-            <h2 class="text-2xl font-semibold text-gray-800 section-title">Descripción Profesional</h2>
-            <p class="mt-4 text-gray-600">
-                Roldeint David Jiménez Osorio es un Ingeniero de Sistemas con 7 años de experiencia profesional, especializado en la gestión de infraestructura tecnológica, ciberseguridad y administración del tenant de Microsoft 365. Su trayectoria incluye roles clave en Canacol Energy Colombia LTD, donde ha liderado proyectos significativos como la optimización de procesos de alistamiento de equipos y la implementación de procedimientos de control de accesos, logrando resultados medibles en eficiencia operativa y seguridad de la información. Certificado en ITIL V4, posee conocimientos en soporte técnico nivel 1,2 y 3 ,implementación de sistemas NAC, Adminsitración de ITSM, Gestión de backups y cumplimiento de ISO 27001:2022. Se destaca por su capacidad para resolver problemas técnicos, automatizar procesos y garantizar la seguridad de datos, habiendo contribuido al éxito de iniciativas tecnológicas mediante la estandarización de procesos y la mejora continua. Comprometido con la innovación, Roldeint aporta soluciones tecnológicas eficientes que impulsan el éxito organizacional, enfocándose siempre en la calidad, la seguridad y la satisfacción del usuario final.
+<div class="max-w-6xl mx-auto shadow-xl bg-white my-10 grid grid-cols-1 md:grid-cols-3">
+
+    <aside class="sidebar p-8 md:col-span-1">
+        <div class="text-center mb-8">
+            <img src="profile-pic.jpg" alt="Foto de Roldeint David Jiménez Osorio" class="w-32 h-32 rounded-full mx-auto border-4 border-blue-500 object-cover">
+            <h1 class="text-2xl font-bold mt-4">Roldeint David<br>Jiménez Osorio</h1>
+            <p class="text-blue-300 text-sm mt-1">Analista de Ciberseguridad | Threat Intelligence | Seguridad de la Información</p>
+        </div>
+
+        <h3 class="text-lg font-semibold mb-2 text-blue-300">Contacto</h3>
+        <ul class="space-y-2 text-sm">
+            <li><i class="fa fa-phone mr-2 text-blue-400"></i> +57 323 277 8423</li>
+            <li><i class="fa fa-envelope mr-2 text-blue-400"></i>
+                <a href="mailto:roldeint.jimenez99@gmail.com">roldeint.jimenez99@gmail.com</a>
+            </li>
+            <li><i class="fa fa-location-dot mr-2 text-blue-400"></i> Bogotá, Colombia</li>
+        </ul>
+
+        <h3 class="text-lg font-semibold mt-6 mb-2 text-blue-300">Enlaces</h3>
+        <ul class="space-y-2 text-sm">
+            <li>
+                <a href="https://wa.me/qr/PVQ5MKOPYIK3H1" target="_blank">
+                    <i class="fab fa-whatsapp mr-2 text-green-400"></i> WhatsApp
+                </a>
+            </li>
+            <li>
+                <a href="https://co.linkedin.com/in/roldeint-david-j-b6ba68146" target="_blank">
+                    <i class="fab fa-linkedin mr-2 text-blue-400"></i> LinkedIn
+                </a>
+            </li>
+        </ul>
+
+        <a href="Roldeint_Jimenez_CV.pdf" download class="block text-center mt-6 bg-emerald-600 hover:bg-emerald-500 text-white font-semibold py-2 px-4 rounded-lg transition">
+            <i class="fa-solid fa-file-arrow-down mr-2"></i> Descargar Hoja de Vida (PDF)
+        </a>
+
+        <h3 class="text-lg font-semibold mt-8 mb-2 text-blue-300">Competencias Clave CTI</h3>
+        <div class="text-sm leading-6">
+            <span class="badge">Threat Intelligence</span>
+            <span class="badge">Análisis de amenazas</span>
+            <span class="badge">OSINT</span>
+            <span class="badge">MITRE ATT&amp;CK</span>
+            <span class="badge">Gestión de incidentes</span>
+            <span class="badge">SOC Monitoring</span>
+            <span class="badge">Microsoft 365 Security</span>
+            <span class="badge">Taegis XDR</span>
+            <span class="badge">Sophos EDR/XDR</span>
+            <span class="badge">Tenable</span>
+            <span class="badge">FortiMail</span>
+            <span class="badge">Email Threat Analysis</span>
+            <span class="badge">Vulnerability Management</span>
+            <span class="badge">Investigación de eventos</span>
+            <span class="badge">Gestión de accesos</span>
+            <span class="badge">Power Platform</span>
+            <span class="badge">ISO 27001:2022</span>
+            <span class="badge">ITSM</span>
+            <span class="badge">Automatización</span>
+            <span class="badge">Python</span>
+        </div>
+
+        <h3 class="text-lg font-semibold mt-8 mb-2 text-blue-300">Herramientas y Plataformas</h3>
+        <ul class="text-sm space-y-1">
+            <li>Microsoft 365 Security</li>
+            <li>Microsoft Defender</li>
+            <li>Taegis XDR</li>
+            <li>Sophos (EDR / Intercept X)</li>
+            <li>Tenable (Gestión de vulnerabilidades)</li>
+            <li>FortiMail (Seguridad de correo / Phishing)</li>
+            <li>ManageEngine ServiceDesk Plus</li>
+            <li>Active Directory</li>
+            <li>Azure / Entra ID</li>
+            <li>SharePoint / Teams</li>
+            <li>Power Platform (Power Automate, Power Apps, Power BI)</li>
+            <li>Power BI / SQL</li>
+            <li>Python</li>
+        </ul>
+
+        <h3 class="text-lg font-semibold mt-8 mb-2 text-blue-300">Habilidades Blandas</h3>
+        <ul class="text-sm space-y-1">
+            <li>Pensamiento analítico</li>
+            <li>Investigación y correlación</li>
+            <li>Comunicación técnica</li>
+            <li>Priorización de riesgos</li>
+            <li>Resolución de problemas</li>
+            <li>Trabajo bajo presión</li>
+            <li>Orientación a resultados</li>
+        </ul>
+
+        <h3 class="text-lg font-semibold mt-8 mb-2 text-blue-300">Idiomas</h3>
+        <p class="text-sm">Español: Nativo</p>
+        <p class="text-sm">Inglés: Básico – En formación</p>
+
+        <h3 class="text-lg font-semibold mt-8 mb-2 text-blue-300">Certificaciones</h3>
+        <ul class="text-sm space-y-1">
+            <li>Auditor Interno ISO/IEC 27001:2022, SGS Colombia S.A.S, 2024</li>
+            <li>Líder Implementador ISO/IEC 27001:2022, SGS Colombia S.A.S, 2024</li>
+            <li>ITIL Foundations V4, PeopleCert, 2020</li>
+            <li>Scrum Foundation, CERTIPROF, 2024</li>
+        </ul>
+
+        <h3 class="text-lg font-semibold mt-8 mb-2 text-blue-300">Formación Complementaria</h3>
+        <ul class="text-sm space-y-1">
+            <li>ServiceDesk Lider, ITSERVICE University, 2023</li>
+            <li>Programación Básica en Python, Huawei Learning, 2022</li>
+            <li>AWS Foundations, AWS Academy, 2022</li>
+            <li>Servicio al Cliente, ARTE, 2021</li>
+        </ul>
+    </aside>
+
+    <main class="p-10 md:col-span-2">
+        <section class="mb-10">
+            <h2 class="section-title">Perfil Profesional</h2>
+            <p class="mt-4 text-gray-700 leading-relaxed text-justify">
+                Ingeniero de Sistemas y Especialista en Seguridad Informática con experiencia en ciberseguridad, análisis de eventos de seguridad, administración de plataformas tecnológicas y fortalecimiento de controles de acceso. He participado en la gestión y monitoreo de eventos de seguridad en entornos corporativos, administración de herramientas de seguridad sobre Microsoft 365, Sophos, Tenable y FortiMail, así como en apoyo a procesos de investigación y respuesta ante incidentes. Cuento con experiencia en estandarización y automatización de procesos de acceso, control de identidades, soporte técnico de niveles 1, 2 y 3, así como en la gestión de activos y plataformas ITSM. Mi perfil combina enfoque analítico, orientación a riesgo, conocimiento de marcos como ISO 27001:2022 y capacidad para correlacionar información técnica con impacto operativo, aportando valor en funciones asociadas a Threat Intelligence, análisis de amenazas y ciberdefensa.
             </p>
         </section>
 
-        <!-- Experiencia Laboral -->
-        <section class="mb-8">
-            <h2 class="text-2xl font-semibold text-gray-800 section-title">Experiencia Laboral</h2>
-            <div class="mt-4">
-                <h3 class="text-xl font-medium text-gray-700">Técnico IT</h3>
-                <p class="text-gray-600">Canacol Energy Colombia LTD, Bogotá, Colombia</p>
-                <p class="text-gray-500">Enero 2022 - Actual</p>
-                <ul class="list-disc list-inside mt-2 text-gray-600">
-                    <li>Brindar soporte técnico nivel 1,2 y 3 para resolver incidencias de usuarios finales.</li>
-                    <li>Administrar plataformas de gestión de Microsoft 365 para el control de accesos y supervisión de la seguridad de la información.</li>
-                    <li>Gestionar activos tecnológicos y procesos de inventario.</li>
-                    <li>Administrar eventos de seguridad en plataformas SOC.</li>
-                    <li>Administrar plataformas ITSM.</li>
-                    <li>Administrar de Backups.</li>
-                    <li>Gestionar procesos y accesos a usuarios finales para mejorar la experiencia operativa.</li>
-                    <li>Liderar el proyecto de procedimientos de gestión y control de accesos, logrando el objetivo de supervisar, automatizar y estandarizar procesos de creación, modificación y terminación de usuarios.</li>
-                    <li>Dirigir el proyecto de optimización de alistamiento de equipos de cómputo, logrando el objetivo de disminuir tiempos de alistamiento de equipos y garantizar la entrega oportuna de elementos tecnológicos en la contratación de nuevo personal.</li>
+        <section class="mb-10">
+            <h2 class="section-title">Experiencia Laboral</h2>
+
+            <div class="mt-6">
+                <h3 class="text-xl font-semibold text-gray-800">Técnico IT</h3>
+                <p class="text-sm text-gray-500">Canacol Energy Colombia LTD, Bogotá, Colombia | Enero 2022 - Marzo 2026</p>
+                <ul class="list-disc ml-6 mt-3 text-gray-700 space-y-2">
+                    <li>Administré eventos de seguridad en plataformas SOC/XDR, apoyando la identificación, revisión y seguimiento de alertas de seguridad.</li>
+                    <li>Administré eventos de seguridad en plataformas como <strong>Sophos y Taegis XDR</strong>, analizando alertas, comportamientos anómalos e indicadores de compromiso (IOCs).</li>
+                    <li>Gestioné herramientas de Microsoft 365 para control de accesos, identidades y fortalecimiento de la seguridad de la información.</li>
+                    <li>Gestioné vulnerabilidades mediante <strong>Tenable</strong>, apoyando la identificación, priorización y seguimiento de riesgos de seguridad.</li>
+                    <li>Analicé amenazas de correo electrónico utilizando <strong>FortiMail</strong>, identificando campañas de phishing, malware y correos maliciosos.</li>
+                    <li>Participé en actividades asociadas a monitoreo de seguridad, validación de eventos y análisis técnico de incidentes reportados por usuarios o herramientas.</li>
+                    <li>Lideré el proyecto de procedimientos de gestión y control de accesos, automatizando procesos de creación, modificación y terminación de cuentas.</li>
+                    <li>Automaticé procesos de seguridad y gestión de accesos mediante <strong>Power Platform</strong> (Power Automate, Power Apps y Power BI), mejorando la trazabilidad y la eficiencia operativa.</li>
+                    <li>Apoyé iniciativas de cumplimiento alineadas con ISO 27001:2022, fortaleciendo la trazabilidad y el control sobre accesos y activos tecnológicos.</li>
+                    <li>Brindé soporte técnico nivel 1, 2 y 3 en ambientes corporativos, con capacidad de análisis, documentación y respuesta oportuna.</li>
+                    <li>Administré plataformas ITSM, inventario tecnológico y procesos de respaldo, garantizando continuidad operativa y control documental.</li>
+                    <li>Participé en la integración y mejora del catálogo de servicios, categorización de tickets y estructuración de eventos de seguridad de la información en ServiceDesk.</li>
                 </ul>
             </div>
-            <div class="mt-6">
-                <h3 class="text-xl font-medium text-gray-700">Auxiliar IT</h3>
-                <p class="text-gray-600">Canacol Energy Colombia LTD, Bogotá, Colombia</p>
-                <p class="text-gray-500">Junio 2018 - Diciembre 2021</p>
-                <ul class="list-disc list-inside mt-2 text-gray-600">
-                    <li>Brindar soporte técnico nivel 1 a usuarios internos.</li>
-                    <li>Gestionar activos tecnológicos para asegurar su correcto registro y mantenimiento.</li>
-                    <li>Participar en el proyecto de implementación de gestor de activos en ITSM, logrando el objetivo de controlar y generar un ciclo de vida para cada activo tanto físico como de información.</li>
+
+            <div class="mt-8">
+                <h3 class="text-xl font-semibold text-gray-800">Auxiliar IT</h3>
+                <p class="text-sm text-gray-500">Canacol Energy Colombia LTD, Bogotá, Colombia | Junio 2018 - Diciembre 2021</p>
+                <ul class="list-disc ml-6 mt-3 text-gray-700 space-y-2">
+                    <li>Brindé soporte técnico nivel 1 a usuarios internos, documentando incidentes y contribuyendo a la continuidad operativa.</li>
+                    <li>Gestioné activos tecnológicos, control de inventario y trazabilidad de elementos durante su ciclo de vida.</li>
+                    <li>Participé en la implementación del gestor de activos en la plataforma ITSM, fortaleciendo el control y la visibilidad de activos físicos y de información.</li>
                 </ul>
             </div>
-            <div class="mt-6">
-                <h3 class="text-xl font-medium text-gray-700">Practicante IT</h3>
-                <p class="text-gray-600">Canacol Energy Colombia LTD, Bogotá, Colombia</p>
-                <p class="text-gray-500">Diciembre 2017 - Junio 2018</p>
-                <ul class="list-disc list-inside mt-2 text-gray-600">
-                    <li>Realizar alistamiento y mantenimiento de equipos tecnológicos.</li>
+
+            <div class="mt-8">
+                <h3 class="text-xl font-semibold text-gray-800">Practicante IT</h3>
+                <p class="text-sm text-gray-500">Canacol Energy Colombia LTD, Bogotá, Colombia | Diciembre 2017 - Junio 2018</p>
+                <ul class="list-disc ml-6 mt-3 text-gray-700 space-y-2">
+                    <li>Realicé alistamiento y mantenimiento de equipos tecnológicos, apoyando la operación del área de TI.</li>
                 </ul>
             </div>
         </section>
 
-        <!-- Formación Académica -->
-        <section class="mb-8">
-            <h2 class="text-2xl font-semibold text-gray-800 section-title">Formación Académica</h2>
-            <div class="mt-4">
-                <h3 class="text-xl font-medium text-gray-700">Especialización en Seguridad Informática</h3>
-                <p class="text-gray-600">Fundación Universitaria Compensar</p>
-                <p class="text-gray-500">2024 – 2025</p>
-            </div>
-            <div class="mt-4">
-                <h3 class="text-xl font-medium text-gray-700">Ingeniería de Sistemas</h3>
-                <p class="text-gray-600">Fundación Universitaria Compensar</p>
-                <p class="text-gray-500">2019 – 2025</p>
-            </div>
-            <div class="mt-4">
-                <h3 class="text-xl font-medium text-gray-700">Técnico en Sistemas</h3>
-                <p class="text-gray-600">SENA</p>
-                <p class="text-gray-500">2018</p>
-            </div>
-        </section>
-
-        <!-- Certificaciones -->
-        <section class="mb-8">
-            <h2 class="text-2xl font-semibold text-gray-800 section-title">Certificaciones</h2>
-            <ul class="list-disc list-inside mt-4 text-gray-600">
-                <li>Scrum Foundation, CERTIPROF, 2024</li>
-                <li>Auditor Interno ISO/IEC 27001:2022, SGS Colombia S.A.S, 2024</li>
-                <li>Líder Implementador ISO/IEC 27001:2022, SGS Colombia S.A.S, 2024</li>
-                <li>ITIL Foundations V4, PeopleCert, 2020</li>
+        <section class="mb-10">
+            <h2 class="section-title">Logros Relevantes para CTI</h2>
+            <ul class="list-disc ml-6 mt-3 text-gray-700 space-y-2">
+                <li>Fortalecimiento de controles de acceso e identidades mediante automatización de procesos críticos de altas, modificaciones y bajas de usuarios.</li>
+                <li>Participación en la administración de eventos de seguridad y monitoreo en plataformas SOC/XDR dentro de entorno corporativo.</li>
+                <li>Experiencia en análisis de alertas y eventos sobre herramientas como Sophos, Taegis XDR y FortiMail, apoyando la detección temprana de amenazas.</li>
+                <li>Apoyo a la gestión de vulnerabilidades con Tenable, contribuyendo a la identificación y priorización de riesgos de seguridad.</li>
+                <li>Apoyo a iniciativas de seguridad de la información, cumplimiento y mejora de controles alineados con ISO 27001:2022.</li>
+                <li>Experiencia correlacionando información operativa, tickets, accesos y eventos para análisis y trazabilidad técnica.</li>
+                <li>Participación en la estructuración de categorías de eventos e incidentes de seguridad de la información dentro del modelo ITSM corporativo.</li>
+                <li>Automatización de flujos y controles operativos mediante Power Platform, fortaleciendo la eficiencia y la gobernanza de procesos tecnológicos.</li>
             </ul>
         </section>
 
-        <!-- Cursos -->
-        <section class="mb-8">
-            <h2 class="text-2xl font-semibold text-gray-800 section-title">Cursos</h2>
-            <ul class="list-disc list-inside mt-4 text-gray-600">
-                <li>ServiceDesk Lider, ITSERVICE University, 2023</li>
-                <li>Programación Básica en Python, Huawei Learning, 2022</li>
-                <li>AWS Foundations, AWS Academy, 2022</li>
-                <li>Servicio al Cliente, ARTE, 2021</li>
-            </ul>
+        <section class="mb-10">
+            <h2 class="section-title">Formación Académica</h2>
+            <div class="mt-4 text-gray-700 space-y-3">
+                <p><strong>Especialización en Seguridad Informática</strong>, Fundación Universitaria Compensar <span class="text-gray-500">(2024 – 2025)</span></p>
+                <p><strong>Ingeniería de Sistemas</strong>, Fundación Universitaria Compensar <span class="text-gray-500">(2019 – 2025)</span></p>
+                <p><strong>Técnico en Sistemas</strong>, SENA <span class="text-gray-500">(2018)</span></p>
+            </div>
         </section>
 
-        <!-- Habilidades -->
-        <section class="mb-8">
-            <h2 class="text-2xl font-semibold text-gray-800 section-title">Habilidades</h2>
-            <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+        <section class="mb-10">
+            <h2 class="section-title">Alineación con el Cargo</h2>
+            <div class="mt-4 text-gray-700 space-y-3 leading-relaxed">
+                <p><strong>Análisis de amenazas y eventos:</strong> experiencia en administración y seguimiento de eventos de seguridad, revisión de alertas y atención de incidentes en entornos corporativos.</p>
+                <p><strong>OSINT y pensamiento investigativo:</strong> capacidad para recopilar, validar y correlacionar información técnica desde múltiples fuentes para soportar análisis de riesgo y seguridad.</p>
+                <p><strong>MITRE ATT&amp;CK y marcos de seguridad:</strong> conocimiento funcional del ciclo de ataque, técnicas de amenaza y controles defensivos aplicables en contexto empresarial.</p>
+                <p><strong>Cumplimiento y gobierno:</strong> formación y certificación en ISO 27001:2022, con experiencia en controles, auditoría y mejora de procesos de seguridad.</p>
+                <p><strong>Operación 24/7:</strong> experiencia trabajando con incidentes, requerimientos críticos y atención de casos en ambientes corporativos de alta exigencia.</p>
+            </div>
+        </section>
+
+        <section class="mb-10">
+            <h2 class="section-title">Referencias</h2>
+            <div class="mt-4 text-gray-700 space-y-4">
                 <div>
-                    <h3 class="text-lg font-medium text-gray-700">Técnicas</h3>
-                    <ul class="list-disc list-inside text-gray-600">
-                        <li>Administración de Microsoft 365: control de plataformas como Microsoft Intune, Microsoft Purview, Microsoft SharePoint, Microsoft Exchange, Microsoft Teams</li>
-                        <li>Administración de ITSM</li>
-                        <li>Gestión de Backups con Veeam Backup for Microsoft 365</li>
-                        <li>Control de hallazgos de auditoría referentes a la norma ISO 27001:2022</li>
-                        <li>Taegis XDR</li>
-                        <li>Administración de directorio en Cloud y on-premise por medio de ADManager, Azure o Windows Server</li>
-                        <li>Administración de control de actualizaciones de equipos mediante ManageEngine Endpoint Central</li>
-                    </ul>
+                    <p class="font-semibold">Jerson Eguis Berrio</p>
+                    <p>Asesor de Estrategia Digital y Proyectos TI</p>
+                    <p>+57 313 448 1803</p>
                 </div>
                 <div>
-                    <h3 class="text-lg font-medium text-gray-700">Blandas</h3>
-                    <ul class="list-disc list-inside text-gray-600">
-                        <li>Resolución de Problemas</li>
-                        <li>Gestión del Tiempo</li>
-                        <li>Liderazgo</li>
-                        <li>Comunicación Asertiva</li>
-                        <li>Proactividad</li>
-                        <li>Orientación al Cliente</li>
-                        <li>Gestión de Conflictos</li>
-                    </ul>
+                    <p class="font-semibold">John Anderson Pinzon Niño</p>
+                    <p>Ingeniero Senior de Infraestructura y Seguridad de la Información</p>
+                    <p>+57 320 493 2503</p>
+                </div>
+                <div>
+                    <p class="font-semibold">Laura Katherine Valderrama Ávila</p>
+                    <p>Ingeniería Sr de Despliegue de Servicios y Satisfacción al Usuario Final</p>
+                    <p>+57 316 405 2892</p>
                 </div>
             </div>
         </section>
+    </main>
+</div>
 
-        <!-- Idiomas -->
-        <section class="mb-8">
-            <h2 class="text-2xl font-semibold text-gray-800 section-title">Idiomas</h2>
-            <ul class="list-disc list-inside mt-4 text-gray-600">
-                <li>Español: Nativo</li>
-                <li>Inglés: A1 – A2 (En curso)</li>
-            </ul>
-        </section>
-
-        <!-- Referencias -->
-        <section class="mb-8">
-            <h2 class="text-2xl font-semibold text-gray-800 section-title">Referencias</h2>
-            <div class="mt-4">
-                <p class="text-gray-600">Jerson Eguis Berrio, Asesor de Estrategia Digital y Proyectos TI</p>
-                <p class="text-gray-600">+57 313 448 1803</p>
-            </div>
-            <div class="mt-4">
-                <p class="text-gray-600">John Anderson Pinzon Niño, Ingeniero Senior de Infraestructura y Seguridad de la Información</p>
-                <p class="text-gray-600">+57 320 493 2503</p>
-            </div>
-            <div class="mt-4">
-                <p class="text-gray-600">Laura Katherine Valderrama Ávila, Ingeniería Sr de Despliegue de Servicios y Satisfacción al Usuario Final</p>
-                <p class="text-gray-600">+57 316 405 2892</p>
-            </div>
-        </section>
-    </div>
-
-    <!-- Footer -->
-    <footer class="text-center py-4 text-gray-600">
-        <p>© 2025 Roldeint David Jiménez Osorio. Todos los derechos reservados.</p>
-    </footer>
 </body>
-
 </html>
-
-
